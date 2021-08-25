@@ -1,3 +1,3 @@
 # commuter-download
 
-Work in progress
+Work in progress - will surely be updated this week
