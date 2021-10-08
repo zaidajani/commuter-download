@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import image from "./commuter-logo-large.png";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <>
+      <Navbar />
+      <div className="logo">
+        <center>
+          <img id="logo" src={image} alt="Commuter Logo" />
+        </center>
+      </div>
+      <div className="buttons">
+        <a href="#" className="btn-darkblue">
+          Download for Mac OS
         </a>
-      </header>
-    </div>
+        <a href="#" className="btn-lightblue">
+          Download for Windows
+        </a>
+      </div> 
+    </>
   );
 }
 

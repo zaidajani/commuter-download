@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background: #0099ff;
+  height: 10vh;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  margin-left: 50%;
+  width: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+  margin-top: 3.5vh;
+}
+
+li a {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  margin-top: 5vh;
+  margin-left: 2vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#commuter {
+  margin-left: 5%;
+  position: absolute;
+  margin-top: 1.5vh;
+  color: white;
+}
+
+#slogan {
+  margin-left: 5%;
+  position: absolute;
+  margin-bottom: 1vh;
+}
+
+.App {
+  height: 100vh;  
+  width: 100%;
+}
+
+.btn-darkblue {
+  border: none;
+  background-color: #85A7FF;
+  padding: 20px;
+  font-size: large;
+  border-radius: 8px;
+  width: 300px;
+  text-decoration: none;
+  color: black;
+  font-family: muli;
+  text-align: center;
+}
+
+.btn-lightblue {
+  border: none;
+  background-color: #85DAFF;
+  padding: 20px;
+  font-size: large;
+  border-radius: 8px;
+  width: 300px;
+  text-decoration: none;
+  color: black;
+  font-family: muli;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.btn-darkblue:hover {
+  background-color: #6791fd;
+}
+
+.btn-lightblue:hover {
+  background-color: #5acbfc;
+}
+
+@media screen and (max-width: 728px) {
+  ul {
+    position: absolute;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: #0099ff;
+    clip-path: circle(20px at 95% 5%);
+    -webkit-clip-path: circle(20px at 95% 5%);
+    transition: 1s ease-in-out;
+    pointer-events: none;
+    margin-left: 0%;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav {
+    background: #0099ff;
+    height: 64px;
+    width: 100%;
+  }
+
+  .line {
+    position: relative;
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .burger {
+    position: absolute;
+    margin-top: 2.5vh;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  ul.open {
+    background-color: #0099ff;
+    clip-path: circle(1000px at 95% 5%);
+    -webkit-clip-path: circle(1000px at 95% 5%);
+    pointer-events: all;
+  }
+
+  #commuter {
+    display: none;
   }
 }
