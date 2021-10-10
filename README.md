@@ -1,7 +1,7 @@
 # commuter-download
 
-Work in progress - will surely be updated this day
+Download page for the amazing commuter application.
 
-## It will be looking like this (sneak peek)! Will be made with react.
+## preview
 
-![commuter-preview-beta](./beta.png)
+![commuter-preview](./commuter-demo.png)
