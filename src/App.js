@@ -1,24 +1,21 @@
-import Navbar from "./components/Navbar";
-import image from "./commuter-logo-large.png";
+import Home from "./components/Home";
 import "./App.css";
+import About from "./components/About";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div className="logo">
-        <center>
-          <img id="logo" src={image} alt="Commuter Logo" />
-        </center>
-      </div>
-      <div className="buttons">
-        <a href="#" className="btn-darkblue">
-          Download for Mac OS
-        </a>
-        <a href="#" className="btn-lightblue">
-          Download for Windows
-        </a>
-      </div> 
+      <Router>
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 }

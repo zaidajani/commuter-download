@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# large files
+
+public/commuter-Setup-1.0.0.exe
+public/Commuter.dmg

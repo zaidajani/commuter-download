@@ -1,4 +1,12 @@
 import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams,
+} from "react-router-dom";
 
 export default function Navbar(props) {
   useEffect(() => {
@@ -12,24 +20,19 @@ export default function Navbar(props) {
 
   return (
     <div>
-      <nav>      
+      <nav>
         <div class="burger">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
         </div>
-          <h1 id="commuter">
-            Commuter
-          </h1>
+        <Link to="/"><h1 id="commuter">Commuter</h1></Link>
         <ul className="links">
           <li>
-            <a href="#">Home</a>
+            <Link to="/"><a>Home</a></Link>
           </li>
           <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Contact us</a>
+            <Link to="/about"><a>About Us</a></Link>
           </li>
         </ul>
       </nav>

@@ -11,8 +11,8 @@ nav {
 }
 
 ul {
-  margin-left: 50%;
-  width: 50%;
+  margin-left: 65%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -30,6 +30,10 @@ li a {
   color: white;
 }
 
+li a:hover {
+  color: #cccccc;
+}
+
 .logo {
   margin-top: 5vh;
   margin-left: 2vw;
@@ -40,6 +44,7 @@ li a {
   position: absolute;
   margin-top: 1.5vh;
   color: white;
+  cursor: pointer;
 }
 
 #slogan {
@@ -93,6 +98,11 @@ li a {
 
 .btn-lightblue:hover {
   background-color: #5acbfc;
+}
+
+#description {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
 }
 
 @media screen and (max-width: 728px) {
