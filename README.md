@@ -2,7 +2,7 @@
 
 Download page for the amazing commuter application.
 
-## preview
+## Preview
 
 ![commuter-preview](./commuter-demo.png)
 
