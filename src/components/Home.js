@@ -13,7 +13,7 @@ export default function Home() {
           </center>
         </div>
         <div className="buttons">
-          <Link to="/commuter.dmg"  target="_blank" download className="btn-darkblue">
+          <Link to="/Commuter.dmg"  target="_blank" download className="btn-darkblue">
             Download for Mac OS
           </Link>
           <Link to="/commuter-Setup-1.0.0.exe" target="_blank" download className="btn-lightblue">
